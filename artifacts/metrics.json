@@ -1,0 +1,41 @@
+{
+  "n_train": 5634,
+  "n_test": 1409,
+  "churn_rate": 0.2654,
+  "cv_5fold_train": {
+    "logistic_regression": {
+      "roc_auc": 0.8436,
+      "pr_auc": 0.6559,
+      "brier": 0.1356
+    },
+    "lightgbm": {
+      "roc_auc": 0.8418,
+      "pr_auc": 0.6455,
+      "brier": 0.1369
+    }
+  },
+  "selected_model": "logistic_regression",
+  "test": {
+    "roc_auc": 0.8421,
+    "pr_auc": 0.6296,
+    "brier": 0.1385
+  },
+  "economics": {
+    "offer_cost": 50.0,
+    "save_rate": 0.3,
+    "customer_value": 800.0,
+    "break_even_probability": 0.2083
+  },
+  "test_profit_by_policy": {
+    "contact_nobody": 0.0,
+    "contact_everyone": 19310.0,
+    "threshold_0.5": 31300.0,
+    "model_break_even": 42500.0
+  },
+  "test_customers_contacted": 662,
+  "versions": {
+    "python": "3.13.9",
+    "sklearn": "1.7.2",
+    "lightgbm": "4.7.0"
+  }
+}
